@@ -8,6 +8,10 @@ const Product = ({ img, title, price, isAgeRestricted }) => {
       <h2>{title}</h2>
       <b>{price}$</b>
       <button>Add to cart</button>
+      <div className="modal">
+        <p>Are you 18+?</p>
+        <button>Yes</button>
+      </div>
     </div>
   );
 };

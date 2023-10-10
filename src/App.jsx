@@ -26,7 +26,7 @@ const productsDB = [
 ];
 
 function App() {
-  const [userAge, setUserAge] = useState(16);
+  const [isAdult, setIsAdult] = useState(false);
 
   return (
     <>
