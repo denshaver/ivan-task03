@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 15px;
+  background-color: lightcyan;
+}
+
+.products-container {
+  background-color: #e8e8e8;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  width: 200px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product > h2 {
+  flex-grow: 1;
+}
+
+.product > img {
+  width: 100%;
+}
+
+.restrictment-age-label {
+  background-color: rgb(255, 166, 166);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.product.age-restr {
+  opacity: 0.5;
+  background-color: rgb(222, 222, 222);
+}
+
+.product.age-restr::after {
+  content: "18 +";
+  width: 100%;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
